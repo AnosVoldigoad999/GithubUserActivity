@@ -17,15 +17,8 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "gat [username]",
 	Args:  cobra.ExactArgs(1),
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
-	// Uncomment the following line if your bare application
-	// has an action associated with it:
+	Short: "track recent user activity",
+	Long:  `track recent user activity`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Please wait...")
 		GetActivity(args[0])
