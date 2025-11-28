@@ -18,7 +18,7 @@ var rootCmd = &cobra.Command{
 	Use:   "gat [username]",
 	Args:  cobra.ExactArgs(1),
 	Short: "track recent user activity",
-	Long:  `track recent user activity`,
+	Long:  `track recent user activity, it also saves to "github.json" in the current directory`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Please wait...")
 		GetActivity(args[0])
