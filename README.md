@@ -16,7 +16,7 @@ go build
 #
 go install
 #
-ctt --help # To see the list of available commands
+gat --help # To see the list of available commands
 
 # To get recent activity
 gat username
